@@ -1,0 +1,45 @@
+{
+  "name": "trpc-refresh-token-link",
+  "version": "0.1.0",
+  "description": "A link for TRPC that refreshes the token when it expires",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkuchak/trpc-refresh-token-link.git"
+  },
+  "author": {
+    "name": "Marcos Kuchak",
+    "email": "mkuchak@gmail.com",
+    "url": "https://kuch.dev"
+  },
+  "keywords": [
+    "utility",
+    "library",
+    "link",
+    "trpc-link",
+    "trpc",
+    "refresh-token",
+    "refresh",
+    "jwt",
+    "access-token",
+    "tokens",
+    "jsonwebtoken"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "./dist/"
+  ],
+  "scripts": {
+    "build": "tsup ./src/index.ts --dts --minify --clean"
+  },
+  "dependencies": {
+    "@trpc/client": "11.0.0-next-beta.318",
+    "@trpc/server": "11.0.0-next-beta.318",
+    "p-queue": "^8.0.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.4"
+  }
+}
